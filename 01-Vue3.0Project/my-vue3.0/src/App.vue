@@ -2,7 +2,9 @@
   <!-- Vue2 中的 html 模版中必须要有一对根标签, Vue3 组件的 html 模版中可以没有根标签 -->
   <div id="nav">
     <router-link to="/">Home</router-link> |
-    <router-link to="/setup">Setup</router-link>
+    <router-link to="/setup">Setup</router-link> |
+    <router-link to="/ref">Ref</router-link> |
+    <router-link to="/reactive">Reactive</router-link> |
   </div>
   <router-view />
 </template>
