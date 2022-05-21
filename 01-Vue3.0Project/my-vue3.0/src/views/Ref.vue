@@ -28,6 +28,9 @@ export default defineComponent({
       num.value--;
     }
 
+    // 如果用 ref 对象/数组，内部会自动将对象/数组转换为 reactive 的代理对象
+    // ref 内部：通过给 value 属性添加 getter/setter 来实现对数据的劫持
+    // reactive 内部：通过使用 Proxy 来实现对对象内部所有数据的劫持，并通过 Reflect 操作对象内部数据
     let personList = ref({ list: [{ name: 'sunzj', age: 26 }, { name: 'hufy', age: 25 }] });
     console.log(personList.value.list[0]); // ref 函数包装的对象数据在数据层要获取还是要通过 value 获取
 

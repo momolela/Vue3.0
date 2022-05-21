@@ -10,14 +10,24 @@ export default defineComponent({
   beforeCreate() {
     console.log('beforeCreate');
   },
-  setup() {
+  // async setup() { // setup 函数只能是同步的不能是异步（async）的
+  // setup 可以接收两个参数，props 和 context，context 可以结构成 {attrs, emit, slots}
+  setup(props, { attrs, emit, slots }) {
+    console.log(props, 'setup\'s param props'); // 
+    console.log(attrs, 'setup\'s param attrs'); // 
+    console.log(emit, 'setup\'s param emit'); // 
+    console.log(slots, 'setup\'s param slots'); // 
+
     // setup() 函数在 beforeCreate() 之前自动调用
 
-    console.log(this, 'this in steup'); // this 在 setup() 里面就是 undefined
+    console.log(this, 'this in steup'); // this 在 setup() 里面就是 undefined，因为 setup 在 beforeCreate 之前
 
     let num = 100;
 
-    // 不管是方法还是变量，通过 return 出去，外面就可以直接使用了
+    // 不管是方法还是变量，通过 return 出去，模版文件就可以直接使用了
+    // 返回对象中的属性会与 vue2 data 函数返回对象的属性合并成为组件对象的属性
+    // 返回对象中的方法会与 vue2 methods 中的方法合并成组件对象的方法
+    // setup 函数只能是同步的不能是异步（async）的，因为如果是 async 修饰，说明 setup 返回的不再是一个简单对象，而是 Promise 对象，而这样，模版看不到 return 对象中的属性和方法数据
     return {
       num
     };

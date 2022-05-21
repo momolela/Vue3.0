@@ -26,6 +26,16 @@ const routes: Array<RouteRecordRaw> = [
     path: '/vue3Core',
     name: 'Vue3Core',
     component: () => import('../views/Vue3Core.vue')
+  },
+  {
+    path: '/computed',
+    name: 'Computed',
+    component: () => import('../views/Computed.vue')
+  },
+  {
+    path: '/watch',
+    name: 'Watch',
+    component: () => import('../views/Watch.vue')
   }
 ]
 
