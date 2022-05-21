@@ -22,7 +22,7 @@ export default defineComponent({
 
     const addPerson = () => {
       personList.list.push({ name: newPerson.value, no: personList.list.length + 1 });
-      console.log(obj); // 修改代理对象 personList 会同时修改被代理对象 obj，但是如果修改的是被代理对象 obj，那么代理对象 personList 是不会变化的
+      console.log(obj); // 修改代理对象 personList 会同时修改目标对象 obj，但是如果修改的是目标对象 obj，那么代理对象 personList 是不会变化的
     }
 
     return {

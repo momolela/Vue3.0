@@ -21,6 +21,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/reactive',
     name: 'Reactive',
     component: () => import('../views/Reactive.vue')
+  },
+  {
+    path: '/vue3Core',
+    name: 'Vue3Core',
+    component: () => import('../views/Vue3Core.vue')
   }
 ]
 

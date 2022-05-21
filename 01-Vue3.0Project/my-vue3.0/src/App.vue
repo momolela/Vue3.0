@@ -5,6 +5,7 @@
     <router-link to="/setup">Setup</router-link> |
     <router-link to="/ref">Ref</router-link> |
     <router-link to="/reactive">Reactive</router-link> |
+    <router-link to="/vue3Core">Vue3Core</router-link> |
   </div>
   <router-view />
 </template>
