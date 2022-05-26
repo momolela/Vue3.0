@@ -36,6 +36,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/watch',
     name: 'Watch',
     component: () => import('../views/Watch.vue')
+  },
+  {
+    path: '/lifeCycle',
+    name: 'LifeCycle',
+    component: () => import('../views/LifeCycle.vue')
   }
 ]
 

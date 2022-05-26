@@ -8,6 +8,7 @@
     <router-link to="/vue3Core">Vue3Core</router-link> |
     <router-link to="/computed">Computed</router-link> |
     <router-link to="/watch">Watch</router-link> |
+    <router-link to="/lifeCycle">LifeCycle</router-link> |
   </div>
   <router-view />
 </template>
