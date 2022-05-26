@@ -9,6 +9,7 @@
     <router-link to="/computed">Computed</router-link> |
     <router-link to="/watch">Watch</router-link> |
     <router-link to="/lifeCycle">LifeCycle</router-link> |
+    <router-link to="/hook">Hook</router-link> |
   </div>
   <router-view />
 </template>
