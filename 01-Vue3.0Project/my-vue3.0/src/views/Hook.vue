@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div>===== 自定义 hook 函数实现点击页面显示鼠标位置 =====</div>
+    <h2>===== 自定义 hook 函数实现点击页面显示鼠标位置 =====</h2>
     <div>x:{{x}}</div>
     <div>y:{{y}}</div>
-    <div>===== 自定义 hook 函数实现 axios 请求封装 =====</div>
+    <h2>===== 自定义 hook 函数实现 axios 请求封装 =====</h2>
     <div v-if="loading">加载中...</div>
     <div v-else>
       <div>请求结果数据 object：</div>
@@ -43,7 +43,7 @@ export default defineComponent({
 
     watch(data, () => {
       if (data.value) {
-        console.log(data.value.length);
+        console.log(data.value);
       }
     });
 

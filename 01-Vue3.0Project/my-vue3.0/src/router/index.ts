@@ -46,6 +46,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/hook',
     name: 'Hook',
     component: () => import('../views/Hook.vue')
+  },
+  {
+    path: '/toRefs',
+    name: 'ToRefs',
+    component: () => import('../views/ToRefs.vue')
   }
 ]
 

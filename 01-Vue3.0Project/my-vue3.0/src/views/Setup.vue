@@ -33,6 +33,19 @@ export default defineComponent({
     };
   }
 })
+
+
+// 直接在 script 标签中添加 setup 属性就可以直接使用 setup 语法糖了
+// 使用 setup 语法糖后，不用写 setup 函数；
+// 组件只需要引入不需要注册；
+// 属性和方法也不需要再返回，可以直接在 template 模板中使用。
+// 自动将文件名定义为组件的 name 属性
+
+// setup 语法糖中新增的 api
+// defineProps：子组件接收父组件中传来的 props
+// defineEmits：子组件调用父组件中的方法 emit
+// defineExpose：子组件暴露属性，可以在父组件中拿到
 </script>
+
 <style scoped>
 </style>
