@@ -51,6 +51,21 @@ const routes: Array<RouteRecordRaw> = [
     path: '/toRefs',
     name: 'ToRefs',
     component: () => import('../views/ToRefs.vue')
+  },
+  {
+    path: '/shallowReactiveRefReadonly',
+    name: 'ShallowReactiveRefReadonly',
+    component: () => import('../views/ShallowReactiveRefReadonly.vue')
+  },
+  {
+    path: '/toRawMarkRaw',
+    name: 'ToRawMarkRaw',
+    component: () => import('../views/ToRawMarkRaw.vue')
+  },
+  {
+    path: '/toRef',
+    name: 'ToRef',
+    component: () => import('../views/ToRef.vue')
   }
 ]
 
